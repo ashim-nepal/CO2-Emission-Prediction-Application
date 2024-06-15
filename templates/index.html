@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashim Nepal | CO2 Emissions Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>CO2 Emissions Prediction Application | Ashim Nepal</h1>
+
+      You can see the inputs details and with suitable random values in each fields can do predictions.<br><br>
+    <a id="openDialog">Click here to understand input fields values real quick.</a>
+
+
+
+    <form action="/predict" method="post">
+        <label for="Make">Make:</label>
+        <input type="text" id="Make" name="Make" required><br><br>
+
+        <label for="Model">Model:</label>
+        <input type="text" id="Model" name="Model" required><br><br>
+
+        <label for="Vehicle_Class">Vehicle Class:</label>
+        <input type="text" id="Vehicle_Class" name="Vehicle Class" required><br><br>
+
+        <label for="Engine_Size">Engine Size (L):</label>
+        <input type="number" step="0.1" id="Engine_Size" name="Engine Size(L)" required><br><br>
+
+        <label for="Cylinders">Cylinders:</label>
+        <input type="number" id="Cylinders" name="Cylinders" required><br><br>
+
+        <label for="Transmission">Transmission:</label>
+        <input type="text" id="Transmission" name="Transmission" required><br><br>
+
+        <label for="Fuel_Type">Fuel Type:</label>
+        <input type="text" id="Fuel_Type" name="Fuel Type" required><br><br>
+
+        <label for="Fuel_Consumption_City">Fuel Consumption City (L/100 km):</label>
+        <input type="number" step="0.1" id="Fuel_Consumption_City" name="Fuel Consumption City (L/100 km)" required><br><br>
+
+        <label for="Fuel_Consumption_Hwy">Fuel Consumption Hwy (L/100 km):</label>
+        <input type="number" step="0.1" id="Fuel_Consumption_Hwy" name="Fuel Consumption Hwy (L/100 km)" required><br><br>
+
+        <label for="Fuel_Consumption_Comb">Fuel Consumption Comb (L/100 km):</label>
+        <input type="number" step="0.1" id="Fuel_Consumption_Comb" name="Fuel Consumption Comb (L/100 km)" required><br><br>
+
+        Please note that application does not have input types error handling. Since that the regex is not included please reconsider reviewing suitable inputs as described!
+        <br><br>
+        <input type="submit" value="Predict">
+        <div id="dialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn" id="closeDialogBtn">&times;</span>
+            <h2>CO2 Emissions Prediction Inputs in Short</h2>
+            Provided following are the details to predict the CO2 emissions:
+            <ul>
+                <li><strong>Make:</strong> The manufacturer of the vehicle. <em>Example: Audi, BMW, Honda</em></li><br>
+                <li><strong>Model:</strong> The specific model of the vehicle. <em>Example: A3, Sedan, Odyssey</em></li><br>
+                <li><strong>Vehicle Class:</strong> The category of the vehicle. <em>Example: Compact, Mid-sized, Minivan</em></li><br>
+                <li><strong>Engine Size(L):</strong> The engine size in liters. <em>Example: 2.0, 3.5, 5.8</em></li><br>
+                <li><strong>Cylinders:</strong> The number of cylinders in the engine. <em>Example: 4, 6, 8</em></li><br>
+                <li><strong>Transmission:</strong> The type of transmission. <em>Example: AS5, AS8, AM7</em></li><br>
+                <li><strong>Fuel Type:</strong> The type of fuel used. <em>Example: Z, D, X, E, N</em></li><br>
+                <li><strong>Fuel Consumption City (L/100 km):</strong> Fuel consumption in the city. <em>Example: 8.5, 12.3</em></li><br>
+                <li><strong>Fuel Consumption Hwy (L/100 km):</strong> Fuel consumption on the highway. <em>Example: 6.2, 9.8</em></li><br>
+                <li><strong>Fuel Consumption Comb (L/100 km):</strong> Combined fuel consumption. <em>Example: 7.3, 10.5</em></li><br>
+            </ul>
+            <br>
+            <a href="https://drive.google.com/file/d/1o4fUxXJl09lBQJ1qCjxcmy5JV7_-7hzu/view?usp=sharing" target="_blank">Click here to view full dataset to grasp insights of dataset columns!</a>
+        </div>
+    </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p>Simple Prediction Model Application<br><br>KRB-01 by <b><a href="https://ashimnepal.com.np" target="_blank">Ashim Nepal</a></b>, 06-2024</p>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var openDialog = document.getElementById("openDialog");
+    var dialog = document.getElementById("dialog");
+    var closeDialogBtn = document.getElementById("closeDialogBtn");
+    openDialog.onclick = function() {
+        dialog.style.display = "block";
+    };
+    closeDialogBtn.onclick = function() {
+        dialog.style.display = "none";
+    };
+    window.onclick = function(event) {
+        if (event.target === dialog) {
+            dialog.style.display = "none";
+        }
+    };
+});
+</script>
+</body>
+</html>
