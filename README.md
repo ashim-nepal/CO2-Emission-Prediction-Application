@@ -5,6 +5,9 @@ This Repository consists of the files that I have used in creating the web appli
 
 You can Access the application by clicking the link here: [Application](https://co2-emission-prediction-application.onrender.com/)
 
+! Please Note that, the site might take a while to load as its the free hosting and the requests and respond in the server are limited. Thank You!
+
+
 
 ## Acknowledgements
 
@@ -71,6 +74,10 @@ IV. Predicted Result.
 ![app-4](https://raw.githubusercontent.com/ashim-nepal/images/main/CO2-Prediction-app-4.png)
 
 Thats the Co2 Emission Application, you can give it a shot by clicking the link here, [Application](https://co2-emission-prediction-application.onrender.com/)
-Thank You!
+
+Please Note that, the site might take a while to load as its the free hosting and the requests and respond in the server are limited. Thank You!
+
+
+-The End-
 
 
