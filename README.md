@@ -68,6 +68,7 @@ II. Input Description for the Application
 ![app-2](https://raw.githubusercontent.com/ashim-nepal/images/main/CO2-Prediction-app-2.png)
 
 III. Inputs for every fields to make the prediction
+
 ![app-3](https://raw.githubusercontent.com/ashim-nepal/images/main/CO2-Prediction-app-3.png)
 
 IV. Predicted Result.
