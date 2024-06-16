@@ -54,3 +54,23 @@ Ashim Nepal [AI]
 ## Support
 
 For support, email at nepalashim90@gmail.com
+
+
+## Application Demo
+
+I. Preview of the Application
+![app-1](https://raw.githubusercontent.com/ashim-nepal/images/main/CO2-Prediction-app-1.png)
+
+II. Input Description for the Application
+![app-2](https://raw.githubusercontent.com/ashim-nepal/images/main/CO2-Prediction-app-2.png)
+
+III. Inputs for every fields to make the prediction
+![app-3](https://raw.githubusercontent.com/ashim-nepal/images/main/CO2-Prediction-app-3.png)
+
+IV. Predicted Result.
+![app-4](https://raw.githubusercontent.com/ashim-nepal/images/main/CO2-Prediction-app-4.png)
+
+Thats the Co2 Emission Application, you can give it a shot by clicking the link here, [Application](https://co2-emission-prediction-application.onrender.com/)
+Thank You!
+
+
